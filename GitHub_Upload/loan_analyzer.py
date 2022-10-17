@@ -12,6 +12,8 @@ First, let's start with some calculations on a list of prices for 5 loans.
     3. Using the sum of all loans and the total number of loans, calculate the average loan price.
     4. Print all calculations with descriptive messages.
 """
+print('Part 1 \n')
+
 loan_costs = [500, 600, 200, 1000, 450]
 
 # How many loans are in the list?
@@ -54,6 +56,7 @@ Using more detailed data on one of these loans, follow these steps to calculate 
     @NOTE:
     If Present Value represents the loan's fair value (given the required minimum return of 20%), does it make sense to buy the loan at its current cost?
 """
+print('\nPart 2 \n')
 
 # Given the following loan data, you will need to calculate the present value for the loan
 loan = {
@@ -77,6 +80,7 @@ print(f'Remaining months: {remaining_months}')
 #   HINT: Present Value = Future Value / (1 + Discount_Rate/12) ** remaining_months
 
 fair_value = future_value / (1 + (.2 / 12)) ** remaining_months
+print(f'Fair value for loan: {fair_value}')
 
 # If Present Value represents what the loan is really worth, does it make sense to buy the loan at its cost?
 # @TODO: Write a conditional statement (an if-else statement) to decide if the present value represents the loan's fair value.
@@ -98,6 +102,7 @@ Perform financial calculations using functions.
 2. Use the function to calculate the present value of the new loan given below.
     a. Use an `annual_discount_rate` of 0.2 for this new loan calculation.
 """
+print('\nPart 3 \n')
 
 # Given the following loan data, you will need to calculate the present value for the loan
 new_loan = {
@@ -134,6 +139,7 @@ In this section, you will use a loop to iterate through a series of loans and se
     b. If the loan_price is less than or equal to 500 then append that loan to the `inexpensive_loans` list.
 3. Print the list of inexpensive_loans.
 """
+print('\nPart 4 \n')
 
 loans = [
     {
@@ -173,7 +179,7 @@ for loan in loans:
         inexpensive_loans.append(loan)
 
 # @TODO: Print the `inexpensive_loans` list
-print(f'All inexpensive loans: {inexpensive_loans}')
+print(f'All inexpensive loans:\n {inexpensive_loans}')
 
 
 """Part 5: Save the results.
